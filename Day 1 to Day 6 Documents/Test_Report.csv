@@ -1,0 +1,36 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks
+TC001,Validate Home Page Loading,Open Home Page,All components and content should load properly,Page loads with all components as expected,Passed,High,-,Working as intended
+TC002,Test Featured Products Component,View Featured Products section on Home Page,Should display products marked as Featured from Sanity,Featured products displayed correctly,Passed,Medium,-,Sanity integration working
+TC003,Test Latest Products Component,View Latest Products section,Should show products sorted by addition date,Latest products displayed in correct order,Passed,Medium,-,Date sorting working
+TC004,Test Trending Products Component,View Trending Products section,Should display high-rated products,High-rated products shown correctly,Passed,Medium,-,Rating filter working
+TC005,Validate Shop Page Grid View,Switch to Grid View in Shop page,Products should display in grid layout,Grid view renders correctly,Passed,Medium,-,Layout switch working
+TC006,Validate Shop Page List View,Switch to List View in Shop page,Products should display in list layout,List view renders correctly,Passed,Medium,-,Layout switch working
+TC007,Test Shop Page Filters,Apply various filters (category brands ratings etc),Products should filter according to selection,Filters working as expected,Passed,High,-,All filters functional
+TC008,Test Shop Page Search,Enter product name in search box,Matching products should display,Search results shown correctly,Passed,High,-,Search functionality working
+TC009,Test Shop Pagination,Navigate through product pages,Should show correct number of products per page,Pagination working properly,Passed,Medium,-,Page navigation smooth
+TC010,Validate Cart Functionality,Add products to cart,Products should add to cart and persist in localStorage,Cart updates correctly,Passed,High,-,localStorage working
+TC011,Test Cart Update,Update product quantity in cart,Cart total should update accordingly,Updates working as expected,Passed,High,-,Calculations correct
+TC012,Validate Checkout Process,Fill checkout form and submit,Order should be created in Sanity with unique ID,Order created successfully,Passed,Critical,-,Sanity integration working
+TC013,Test Stripe Payment Integration,Process payment through Stripe,Payment should process and reflect in Stripe dashboard,Payments processing correctly,Passed,Critical,-,Stripe working properly
+TC014,Test Clerk Authentication,Login through Clerk,User should be authenticated and details available,Authentication working properly,Passed,Critical,-,Clerk integration successful
+TC015,Validate Protected Routes,Access checkout/payment without login,Should redirect to login page,Protected routes working,Passed,High,-,Security working
+TC016,Test Product Detail Page,Click on product to view details,Should show correct product details from Sanity,Product details displayed correctly,Passed,High,-,Dynamic routing working
+TC017,Test Related Products,View related products on detail page,Should show products from same category,Related products shown correctly,Passed,Medium,-,Category filter working
+TC018,Validate Orders History,View orders page while logged in,Should show user's order history from Sanity,Orders displayed correctly,Passed,High,-,Order tracking working
+TC019,Test Order Payment Status,View unpaid order,Should show payment button for unpaid orders,Payment button shows correctly,Passed,High,-,Status tracking working
+TC020,Test Static Pages,Access About Blog FAQ pages,Pages should load with correct content,Static pages working properly,Passed,Low,-,Content displayed correctly
+TC021,Test 404 Page,Access non-existent URL,Should show 404 page,404 page shows correctly,Passed,Low,-,Error handling working
+TC022,Test Responsive Design,View site on different screen sizes,Layout should adjust appropriately,Responsive design working,Passed,High,-,Mobile-friendly
+TC023,Clerk Sign-In API Integration,Test sign-in API endpoint with valid credentials,Should return valid session token and user data,Authentication successful with valid token,Passed,Critical,-,API response time < 2s
+TC024,Clerk Sign-Out API,Test sign-out functionality,Should invalidate session and clear user data,Session terminated successfully,Passed,High,-,Clean logout achieved
+TC025,Clerk User Session Persistence,Check if user session persists across page refreshes,Session should remain valid until explicit logout,Session persistence working,Passed,High,-,Cookie management working
+TC026,Clerk Protected Route API,Access protected API endpoints without authentication,Should return 401 unauthorized,Unauthorized access blocked,Passed,Critical,-,Security measure working
+TC027,Clerk User Profile API,Fetch user profile data through API,Should return correct user information,Profile data retrieved correctly,Passed,Medium,-,Data consistency verified
+TC028,Stripe Payment Intent API,Create payment intent for order,Should return payment intent with correct amount,Payment intent created successfully,Passed,Critical,-,Amount calculation correct
+TC029,Stripe Payment Confirmation,Confirm payment with test card,Should process payment and return success status,Payment processed successfully,Passed,Critical,-,Test transaction complete
+TC030,Stripe Webhook Integration,Test webhook for successful payment,Should update order status in Sanity,Order status updated correctly,Passed,Critical,-,Webhook functioning
+TC031,Stripe Payment Failure Handling,Test payment with invalid card,Should handle failure gracefully with error message,Error handled appropriately,Passed,High,-,Error messaging clear
+TC032,Stripe Refund API,Process refund for test order,Should refund amount and update order status,Refund processed successfully,Passed,High,-,Refund workflow working
+TC033,Clerk OAuth Integration,Test social login functionality,Should authenticate user through OAuth provider,OAuth login successful,Passed,High,-,Social login working
+TC034,Clerk Email Verification,Verify email through API,Should mark email as verified,Email verification successful,Passed,Medium,-,Verification process working
+TC035,Stripe Payment Method API,Add new payment method,Should save and return payment method details,Payment method saved successfully,Passed,High,-,Card storage secure
